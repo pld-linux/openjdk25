@@ -601,7 +601,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{dstdir}/lib/libprefs.so
 %attr(755,root,root) %{dstdir}/lib/librmi.so
 %attr(755,root,root) %{dstdir}/lib/libsctp.so
+%ifarch %{x8664}
 %attr(755,root,root) %{dstdir}/lib/libsimdsort.so
+%endif
 %attr(755,root,root) %{dstdir}/lib/libsyslookup.so
 %attr(755,root,root) %{dstdir}/lib/libjavajpeg.so
 %attr(755,root,root) %{dstdir}/lib/libjdwp.so

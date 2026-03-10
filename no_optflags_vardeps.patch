@@ -1,0 +1,11 @@
+--- a/make/common/NativeCompilation.gmk	2026-03-10 00:54:39.993332783 +0100
++++ b/make/common/NativeCompilation.gmk	2026-03-10 00:54:40.031971568 +0100
+@@ -337,7 +337,7 @@ define SetupBuildSystemSupport
+   # lines for all object files in this setup. This includes at least all the
+   # variables used in the call to add_native_source below.
+   $1_COMPILE_VARDEPS := $$($1_CFLAGS) $$($1_EXTRA_CFLAGS) $$($1_SYSROOT_CFLAGS) \
+-      $$($1_CXXFLAGS) $$($1_EXTRA_CXXFLAGS) $$($1_OPT_CFLAGS) $$($1_OPT_CXXFLAGS) \
++      $$($1_CXXFLAGS) $$($1_EXTRA_CXXFLAGS) \
+       $$($1_CC) $$($1_CXX) $$($1_AS) $$($1_ASFLAGS)
+   $1_COMPILE_VARDEPS_FILE := $$(call DependOnVariable, $1_COMPILE_VARDEPS, \
+       $$($1_OBJECT_DIR)/$$($1_NOSUFFIX).comp.vardeps)

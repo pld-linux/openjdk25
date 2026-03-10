@@ -26,7 +26,7 @@ Summary:	Open-source implementation of the Java Platform, Standard Edition
 Summary(pl.UTF-8):	Wolnoźródłowa implementacja Java 25 SE
 Name:		openjdk25
 Version:	25.0.2
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Development/Languages/Java
 Source0:	https://github.com/openjdk/jdk25u/archive/jdk-%{version}-ga/%{name}-%{version}.tar.gz
